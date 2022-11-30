@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  bot:
+    image: node
+    volumes:
+      - ./:/app/
+    ports:
+      - 8081:8081
+    working_dir: /app
+    command: npm run onlystart
+    stdin_open: true
